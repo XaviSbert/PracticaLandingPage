@@ -1,4 +1,79 @@
 /* CSS LAYOUT */
 /* **************************************************************** */
+/* VARIABLES */
+:root{
+    /* Ancho escritorio 2022 */
+    --anchoPantalla: 1366px;
+}
+
+/* contenedor */
+
+.contenedor {
+  height: 100vh;
+  padding: 5% 0 0 0;
+  /* Centrar main y footer */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* MAIN */
+main, footer{
+  width: calc(var(--anchoPantalla) / 2);
+}
+
+main{
+  border-radius: 20px;
+  height: 90%;
+}
+
+/* Banner */
+
+.banner, .texto, .contacto{
+  padding: 5%;
+}
 
 
+footer{
+  height: 5%;
+  padding: 2% 10%;
+  text-align: center;
+}
+
+/* Contenido */
+
+.texto{
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.texto p{
+  margin-bottom: 2rem;
+}
+
+.texto__cuerpolink--link{
+  color: var(--colorLinks);
+  text-decoration: underline;
+}
+
+.texto__centrado__boton{
+  display: flex;
+  justify-content: center;
+}
+
+.texto__boton{
+  background-color: var(--colorBotonSteps);
+  border-radius: 10px;
+  padding: 0.8rem 2rem; 
+}
+
+/* Contacto */  
+
+.contacto{
+  display: flex;
+  align-items: center;
+}
+
+.contacto__avatar img{
+  border-radius: 50px;
+}
