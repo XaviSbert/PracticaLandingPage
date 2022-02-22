@@ -77,3 +77,7 @@ footer{
 .contacto__avatar img{
   border-radius: 50px;
 }
+
+.contacto__datos{
+  padding: 0 20px;
+}
